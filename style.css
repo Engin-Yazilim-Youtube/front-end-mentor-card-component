@@ -1,0 +1,84 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+p{
+    font-size: 14px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform : translate(-50%,-50%);
+    background-color: white;
+}
+
+.left{
+    width: 300px;
+    background-image: url(./images/image-product-desktop.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.right{
+    width: 300px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    place-items: center;
+    padding: 15px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+h3{
+    font-family: Montserrat;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+h2{
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 10px;
+}
+
+button{
+    width: 250px;
+    height: 50px;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    gap: 15px;
+    cursor: pointer;
+}
+
+span{
+    font-size: 40px;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-family: Fraunces;
+}
